@@ -2,79 +2,241 @@
 　layout: default
 　title: 我的Blog
 ---
-<style type="text/css">
-	td{
-		min-width: 100px;
-		height: 30px;
-		line-height: 30px;
-		text-align: center;
-		/*border: 1px solid #000;*/
-	}
-	table{
-		text-align: center;
-	}
-	.bg{
-		background: #ddd;
-	}
-</style>
-<div>
-	<div style="overflow: hidden;">
-		<div style="height: 50px;">
-			<h1 style="text-align:center;">个人简历</h1>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.con{
+			/*position: relative;*/
+			
+		}
+		.con .o{
+			height: 640px;
+			background: #4dd0e1;
+			
+		}
+		.con .o .one{
+			width: 300px;
+			height: 180px;
+			margin: 0 auto;
+			padding-top: 15%;
+		}
+		.con .o .one p{
+			text-align: center;
+		}
+		.con .o .one .js{
+			font-size: 30px;
+			color: #fff;
+		}
+		.con .o .one .sm{
+			padding-top: 35px;
+			font-size: 20px;
+			color:#ddd;
+		}
+		.con .o .one .gw{
+			padding-top: 20px;
+			font-size: 25px;
+			color: #fff;
+		}
+		.con .o .one #xx{
+			margin: 28px auto;
+			width: 124px;
+			height: 36px;
+			color:#fff;
+			background: #36b0c5;
+			text-align: center;
+			line-height: 36px;
+			cursor:pointer; 
+			border-radius: 3px;
+			transition: 0.1s;
+			box-shadow: 0px 0px 15px rgba(100,100,100,0.2); 
+		}
+		.con .o .one #xx:hover{
+			background: #239bab;
+			box-shadow: 0px 0px 15px rgba(100,100,100,0.3); 
+		}
+		.con .o #mes{
+			display: none;
+			transform:translateY(-10px);
+			box-shadow: 0px 0px 25px rgba(100,100,100,0.8);
+			/*display: none;*/
+			position: absolute;
+			background: #e1e1e1;
+			width: 753px;
+			height: 357px;
+			top: 12%;
+			left: 22%;
+		}
+		.con .o #mes h2{
+			color: #6b6b6b;
+			padding-top: 30px;
+			padding-left: 28px;
+		}
+		.con .o #mes #r{
+			cursor: pointer;
+			padding-right: 30px;
+			padding-top: 2px;
+			text-align: right;
+		}
+		.con .o #mes .h .first{
+			padding-top: 25px;
+		}
+		.con .o #mes .h p{
+			color: #45bbca;
+			padding-top: 15px;
+			padding-left: 40px;
+		}
+		.con .grxx{
+			width: 100%;
+			height: 640px;
+			background: #22c3aa;
+		}
+		.con .grxx h2{
+			font-size: 40px;
+			text-align: center;
+			padding-top: 25px;
+			color:#fff;
+		}
+		.con .grxx ul{
+			padding-top: 15%;
+		}
+		.con .grxx ul li{
+			text-align: center;
+			font-size: 20px;
+			height: 50px;
+			line-height: 50px;
+			color:#fff;
+		}
+		.con .zyjn{
+			overflow: hidden;
+			height: 640px;
+			background: #e8b118;
+		}
+		.con .zyjn h2{
+			font-size: 40px;
+			text-align: center;
+			padding-top: 25px;
+			color:#fff;
+		}
+		.con .zyjn table{
+			margin-top: 10%;
+			margin-left: 17%;
+			border: 2px solid #ec9234;
+			font-size: 20px;
+			text-align: center;
+			width: 150px;
+			float: left;
+		}
+		.con .zyjn table td{
+			height: 40px;
+			line-height: 40px;
+		}
+		.con .zyjn table td:hover{
+			background:#ec9234; color:#fff;
+		}
+		.con .yx{
+			background: #169b70;
+			height: 640px;
+		}
+		.con .yx h2{
+			font-size: 40px;
+			text-align: center;
+			padding-top: 23%;
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="o">
+			<div class="one">
+				<p class="js">hi,我是贾玉壮</p>
+				<p class="sm">一腔热血的激情，一个像素的执着</p>
+				<p class="gw">web前端实习</p>
+				<p id="xx">详细介绍</p>
+			</div>
+			<div id="mes">
+				<h2>基本资料</h2>
+				<div class="h">
+					<p class="first">姓名：贾玉壮</p>
+					<p>年龄：18岁</p>
+					<p>工作经验：无</p>
+					<p>学历：高中</p>
+					<p>毕业学校：鄄城县第一中学</p>
+					<p>应聘职位：web前端实习</p>
+					<p><a href="https://j271339790.github.io/jyzs/html/index.html">点击访问作品-模拟小米官网首页</a></p>
+				</div>
+				<p id="r">关闭</p>
+			</div>
 		</div>
-		<div style="margin-left: 50px;">
-			<h2 style="line-height: 30px;text-align:center;">求职意向：web前端实习</h2>
+		<div class="grxx">
+			<h2>了解我</h2>
+			<ul>
+				<li>本人做事认真，抗压能力强，善于独立思考。</li>
+				<li>诚实守信，善于与人沟通，乐于助人，幽默易容，具有团队合作精神</li>
+				<li>自学能力强，能很好的适应环境，容易接受并理解新知识、新事物</li>
+				<li>责任感强，认真对待自己的工作，独立地按时按质完成工作任务</li>
+			</ul>
 		</div>
-		<div style="height: 50px; line-height: 50px;background: skyblue;">
-			<span style="margin-left: 30px;">个人信息</span>
-		</div>
-		<table style="margin:30px 50px;" border="1" cellspacing="0" cellpadding="0">
-			<tr><td class="bg">姓名</td><td>贾玉壮</td><td class="bg">联系方式</td><td style="width: 120px;">17854085633</td><td style="width: 180px;">271339790@qq.com</td><td class="bg">学历</td><td>高中</td></tr>
-		</table>
-		
-	</div>
-
-	<div>
-		<div style="height: 50px; line-height: 50px;background: skyblue;">
-			<span style="margin-left: 30px;">我的作品</span>
-		</div>
-		<div style="overflow: hidden;">
-			<div style="width:150px; height: 150px; float:left; margin: 30px 50px 20px 50px; "><a href="https://j271339790.github.io/jyzs/html/index.html">点击链接</a></div>
-			<div style=" float:left;margin: 100px 50px; width:200px; height: 120px;">模拟小米官网首页，用到html，css布局。js，jQuery框架</div>
-		</div>
-	</div>
-	<div>
-		<div style="height: 50px; line-height: 50px;background: skyblue;">
-			<span style="margin-left: 30px;">技能</span>
-		</div>
-		<div>
-			<table style="margin:30px 50px;" border="1" cellspacing="0" cellpadding="0">
-				<tr><td class="bg">html</td><td>掌握</td><td class="bg">css</td><td>掌握</td><td class="bg">js</td><td>熟悉</td><td class="bg">php</td><td>了解，能实现简单的增删改查</td></tr>
+		<div class="zyjn">
+			<h2>专业技能</h2>
+			<table>
+				<tr>
+					<td style="background:#ec9234; color:#fff;">语言</td>
+				</tr>
+				<tr>
+					<td>HTML</td>
+				</tr>
+				<tr>
+					<td>CSS</td>
+				</tr>
+				<tr>
+					<td>javascript</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td style="background:#ec9234; color:#fff;">框架</td>
+				</tr>
+				<tr>
+					<td>jQuery</td>
+				</tr>
+				<tr>
+					<td>Bootstrap</td>
+				</tr>
+				<tr>
+					<td>Less、sass</td>
+				</tr>
+				<tr>
+					<td>Vue.js</td>
+				</tr>
+				<tr>
+					<td>Node.js</td>
+				</tr>
+				<tr>
+					<td>React.js</td>
+				</tr>
+			</table>
+			<table>
+				<tr style="background:#ec9234; color:#fff;"><td>技术</td></tr>
+				<tr><td>Git</td></tr>
+				<tr><td>Ajax</td></tr>
+				<tr><td>SVN</td></tr>
 			</table>
 		</div>
-	</div>
-	
-	<div>
-		<div style="height: 50px; line-height: 50px;background: skyblue;">
-			<span style="margin-left: 30px;">框架</span>
+		<div class="yx">
+			<h2>快到我碗里来吧，271339790@qq.com</h2>
 		</div>
-			<div>
-				<table style="margin:30px 50px;" border="1" cellspacing="0" cellpadding="0">
-					<tr><td class="bg">jQuery</td><td>熟悉</td><td class="bg">node.js</td><td>熟悉</td><td class="bg">vue.js</td><td>熟悉</td><td class="bg">react.js</td><td>了解</td></tr>
-				</table>
-			</div>
 	</div>
-	
-	<div>
-		<div style="height: 50px; line-height: 50px;background: skyblue; ">
-			<span style="margin-left: 30px;">自我评价</span>
-		</div>
-		<ul style="margin: 30px 50px;">
-			<li>本人做事认真，抗压能力强，善于独立思考。</li>
-			<li>诚实守信，善于与人沟通，乐于助人，幽默易容，具有团队合作精神</li>
-			<li>自学能力强，能很好的适应环境，容易接受并理解新知识、新事物</li>
-			<li>责任感强，认真对待自己的工作，独立地按时按质完成工作任务</li>
-		</ul>
-	</div>
-
-</div>
+<script type="text/javascript">
+	var xx = document.getElementById('xx');
+	var mes = document.getElementById('mes');
+	var r = document.getElementById('r');
+	xx.onclick = function(){
+		mes.style.display = "block";
+	}
+	r.onclick = function(){
+		mes.style.display = "none";
+	}
+</script>
