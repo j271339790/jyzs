@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="initialize.css">
+    <link rel="stylesheet" href="https://j271339790.github.io/jyzs/css/initialize.css">
     <style>
         .out {position: relative; margin: 0 auto;}
         .in {float: left;}
@@ -19,7 +19,6 @@
 <body>
 <div class="out"></div>
 <script>
-    //在outDiv中根据数据创建inDiv的函数
     function createInDiv_in_OutDiv(){
         for(var i=0; i<dataObj.src.length; i++){
             var div = document.createElement('div');
@@ -28,7 +27,6 @@
             outDiv.appendChild(div);
         }
     }
-    //创建瀑布流函数
     function waterFall() {
         var inDivArr = document.getElementsByClassName("in");
         var num = Math.floor(document.documentElement.clientWidth/inDivArr[0].offsetWidth);
@@ -47,7 +45,6 @@
             }
         }
     }
-    //判断是否需要加载新数据的函数
     function ifAppendNewData() {
         var height1 = document.documentElement.scrollTop || document.body.scrollTop;
         var height2 = document.documentElement.clientHeight;
@@ -57,30 +54,19 @@
             return true;
         }
     }
-
-    //获取服务器数据并处理
-    var dataStr = '{"src":["i1.jpg","i2.jpg","i3.jpg","i4.jpg","i5.jpg","i6.jpg","i7.jpg","i8.jpg","i9.jpg","i10.jpg","i11.jpg","i12.jpg","i13.jpg","i14.jpg","i15.jpg"]}';
+    var dataStr = '{"src":["https://j271339790.github.io/jyzs/img/i1.jpg","https://j271339790.github.io/jyzs/img/i2.jpg","https://j271339790.github.io/jyzs/img/i3.jpg","https://j271339790.github.io/jyzs/img/i4.jpg","https://j271339790.github.io/jyzs/img/i5.jpg","https://j271339790.github.io/jyzs/img/i6.jpg","https://j271339790.github.io/jyzs/img/i7.jpg","https://j271339790.github.io/jyzs/img/i8.jpg","https://j271339790.github.io/jyzs/img/i9.jpg","https://j271339790.github.io/jyzs/img/i10.jpg","https://j271339790.github.io/jyzs/img/i11.jpg","https://j271339790.github.io/jyzs/img/i12.jpg","https://j271339790.github.io/jyzs/img/i13.jpg","https://j271339790.github.io/jyzs/img/i14.jpg","https://j271339790.github.io/jyzs/img/i15.jpg"]}';
     var dataObj = JSON.parse(dataStr);
-    
-    //创建页面
     var outDiv = document.querySelector('.out');
-    //在outDiv中绘制inDiv
     createInDiv_in_OutDiv();
-    //页面绘制完毕后，将页面的内容按照瀑布流排列
     window.onload = function () { 
         waterFall();
     };
-    
-    //页面滚动时检测是否需要添加数据
     window.onscroll = function () {
         if(ifAppendNewData()){
-            //如果需要添加新数据，就向outDiv中再添加15个数据
             createInDiv_in_OutDiv();
-            //然后把整体重新按照瀑布流的方式重新排列一边
             waterFall();
         }
     };
-    //页面大小发生改变的时候，调用瀑布流排列将页面重新排布
     window.onresize = function () {
         waterFall();
     };
