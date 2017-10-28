@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jzhuang CSS选择器</title>
+		<link rel="shortcut icon" href="../img/icon.jpg">
+		<style>
+			body{
+				background: #e2ddc7;
+			}
+			.box .con{
+				background: #fff;
+				width: 65%;
+				margin: 100px auto;
+			}
+			.box .con .header h2{
+				padding-top: 50px;
+				text-align: center;
+				
+			}
+			.box .con .header h2 a{
+				color: #104e8b;
+				text-decoration: none;
+			}
+			.box .con .header h2 a:hover{
+				text-decoration: underline;
+			}
+			.box .con .header i{
+				color:#ee1289;
+				display: inline-block;
+				width: 100px;
+				text-align: center;
+				font-weight: bold;
+				font-size: 18px;
+			}
+			.box .con .header ul li{
+				position: relative;
+				list-style: none;
+				height: 30px;
+				line-height: 30px;
+				width: 100px;
+				text-align: center;
+			}
+			.box .con .header ul li a{
+				text-decoration: none;
+				color: #494949;
+			}
+			.box .con .nav h2{
+				background: #2b6695;
+				width: 90%;
+				height: 38px;
+				line-height: 38px;
+				margin-left: 43px;
+				text-align: center;
+				color: #fff;
+				border-radius: 5px;
+				box-shadow: -5px rgba(43,102,149,0.8);
+			}
+			.box .con .boder h2{
+				text-align: center;
+				border-radius: 5px;
+				font-size:15px;
+				margin-left: 43px;
+				color: #fff;
+				width: 354px;
+				height: 32px;
+				line-height: 32px;
+				background: #2b6600;
+			}
+            .box .con .boder h4{
+                width: 100px;
+                text-align: center;
+            }
+			.box .con .boder ul li{
+				line-height: 18px;
+				list-style: none;
+				height: 40px;
+				font-size: 14px;
+				color: #494949;
+			}
+			.box .con .boder .code span{
+				margin-left: 50px;
+			}
+			.box .con .boder .jc{
+				margin-left: 43px;
+			}
+			.box .con .boder .jc p,.box .con .boder .jc pre{
+				height: 30px;
+				line-height: 30px;
+				margin: 0;
+				padding: 0;
+			}
+			.box .con .boder .jc p{
+				color: #494949;
+			}
+			.box .con .boder .jc pre{
+				color: skyblue;
+				margin-left: 20px;
+			}
+			.box .con .boder .code img{
+				margin-left: 43px;
+			}
+            .box .con .boder .code table{
+                border-collapse:collapse; 
+/*                border: 1px solid #000;*/
+                margin-left: 43px;
+            }
+			.box .con .boder .code ul li{
+				height: 25px;
+				line-height: 25px;
+			}
+            .box .con .boder .code table tr td{
+                border:1px solid #c1c1c1;  
+                min-width: 100px;
+            }
+			.box .con .nav .code img{
+				margin-top: 15px;
+				margin-left: 43px;
+			}
+			.box .footer{
+				width: 65%;
+				margin: 0 auto;
+				margin-top: 50px;
+				background: #fff;
+			}
+			.box .sx{
+				width: 65%;
+				margin: 0 auto;
+				margin-top:-30px;
+			}
+			.box .sx .x{
+				margin-left: 50px;
+			}
+			.box .footer .f{
+				margin-left: 43px;
+				padding: 30px 0;
+			}
+			.box .footer .f p{
+				color: #494949;
+			}
+			.box .footer .f .s{
+				color: skyblue;
+				margin-left: 20px;
+			}
+			.box .fixed{
+				position:fixed;bottom:10px;right:10px;
+			}
+			.box .fixed div{
+				cursor: pointer;
+			}
+			.box .fixed img{
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				transition: All 0.4s ease-in-out;
+				-webkit-transition: All 0.4s ease-in-out;
+           		-moz-transition: All 0.4s ease-in-out;
+            	-o-transition: All 0.4s ease-in-out;
+			}
+		.box .fixed img:hover{
+			 transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+		}
+            #code pre{
+                font-size: 16px;
+            }
+            #code pre pre{
+                margin: 0;
+            }
+            #code{
+                margin: 0;
+            }
+            #code div{
+                width: 90%;
+                margin: 0 auto;
+                background:#f5f5f5;
+            }
+            td{
+                height: 30px;
+                line-height: 30px;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="fixed">
+				<div class="img"><img src="http://jzhuang.ltd/img/top.png" id="btn"></div>
+			</div>
+			<div class="con">
+
+				<div class="header">
+					<h2><a href="javascript:;">CSS过渡</a></h2>
+					<i>知识预览</i>
+					<ul>
+						<li><a href="javascript:;">CSS过渡</a></li>
+					</ul>
+				</div>
+
+				<div class="nav">
+					<h2>CSS过渡</h2>
+				</div>
+
+				<div class="boder">
+					<h2>前面的话</h2>
+					<div class="code">
+						<ul>
+							<li>通过过渡transition，可以让web前端开发人员不需要javascript就可以实现简单的动画交互效果。过渡属性看似简单，但实际上它有很多需要注意的细节和容易混淆的地方。本文将介绍和梳理关于CSS过渡的知识</li>
+						</ul>
+						<h4 style="width: 100px; margin-top: 30px;">定义</h4>
+						<ul>
+						    <li style="height: 50px;">过渡transition是一个复合属性，包括transition-property、transition-duration、transition-timing-function、transition-delay这四个子属性。通过这四个子属性的配合来完成一个完整的过渡效果</li>
+						    <li>transition-property: 过渡属性(默认值为all)</li>
+						    <li>transition-duration: 过渡持续时间(默认值为0s)</li>
+						    <li>transiton-timing-function: 过渡函数(默认值为ease函数)</li>
+						    <li>transition-delay: 过渡延迟时间(默认值为0s)</li>
+						    <li>[注意]IE9-不支持该属性，safari3.1-6、IOS3.2-6.1、android2.1-4.3需要添加-webkit-前缀；而其余高版本浏览器支持标准写法</li>
+						    <img src="../img/10-28-1.jpg" alt="">
+						    <li>鼠标移动到元素上，会出现宽度变化效果</li>
+						</ul>
+						<h4>复合属性</h4>
+						<ul>
+						    <li style="height: 80px;">过渡transition的这四个子属性只有transition-duration是必需值且不能为0。其中，transition-duration和transition-delay>都是时间。当两个时间同时出现时，第一个是transition-duration，第二个是transition-delay；当只有一个时间时，它是transition-duration，而transition-delay为默认值0</li>
+						    <li style="height: 70px;">[注意]transition的这四个子属性之间不能用逗号隔开，只能用空格隔开。因为逗号隔开的代表不同的属性(transition属性支持多值，多值部分稍后介绍)；而空格隔开的代表不同属性的四个关于过渡的子属性</li>
+						    <img src="../img/10-28-2.jpg" alt="">
+                        </ul>
+                        <h4>过渡属性</h4>
+                        <ul>
+                            <li>transition-property</li>
+                            <li>值: none | all | transition-property[,transition-property]*</li>
+                            <li>初始值: all</li>
+                            <li>应用于: 所有元素</li>
+                            <li>继承性: 无</li>
+                            <li>none: 没有指定任何样式</li>
+                            <li>all: 默认值，表示指定元素所有支持transition-property属性的样式</li>
+                            <li>transition-property: 可过渡的样式，可用逗号分开写多个样式</li>
+                        </ul>
+                        <h4>可过渡的样式</h4>
+                        <ul>
+                            <li>不是所有的CSS样式值都可以过渡，只有具有中间值的属性才具备过渡效果</li>
+                            <li>Vstart = 开始值; Vend = 结束值; Vres = 中间值; p = 过渡函数的输出值</li>
+                            <li>Vres = (1 - p) * Vstart + p * Vend</li>
+                            <li>当Vres具有有效值时，则该CSS样式可过渡</li>
+                        </ul>
+                        <ul style="background-color: #f5f5f5;">
+                            <li>颜色: color background-color border-color outline-color</li>
+                            <li>位置: backround-position left right top bottom</li>
+                            <li>长度:</li>
+                            <li style="margin-left: 30px;">[1]max-height min-height max-width min-width height width</li>
+                            <li style="margin-left: 30px;">[2]border-width margin padding outline-width outline-offset</li>
+                            <li style="margin-left: 30px;">[3]font-size line-height text-indent vertical-align</li>
+                            <li style="margin-left: 30px;">[4]border-spacing letter-spacing word-spacing</li>
+                            <li>数字: opacity visibility z-index font-weight zoom</li>
+                            <li>组合: text-shadow transform box-shadow clip</li>
+                            <li>其他: gradient</li>
+                        </ul>
+                        <h4>过渡持续时间</h4>
+                        <ul>
+                            <li>该属性的单位是秒s或毫秒ms</li>
+                            <li>transition-duration</li>
+                            <li>值: time[,time]*</li>
+                            <li>初始值: 0s</li>
+                            <li>应用于: 所有元素</li>
+                            <li>继承性: 无</li>
+                            <li>[注意]该属性不能为负值</li>
+                            <li>[注意]若该属性为0s则为默认值，若为0则为无效值。所以必须带单位</li>
+                            <li>[注意]该值为单值时，即所有过渡属性都对应同样时间；该值为多值时，过渡属性按照顺序对应持续时间</li>
+                        </ul>
+                        <h4>过渡延迟时间</h4>
+                        <ul>
+                            <li>该属性定义元素属性延迟多少时间后开始过渡效果，该属性的单位是秒s或毫秒ms</li>
+                            <li>transition-delay</li>
+                            <li>值: time[,time]*</li>
+                            <li>初始值: 0s</li>
+                            <li>应用于: 所有元素</li>
+                            <li>继承性: 无</li>
+                            <li style="height: 40px;">[注意]该属性若为负值，无延迟效果，但过渡元素的起始值将从0变成设定值(设定值=延迟时间+持续时间)。若该设定值小于等于0，则无过渡效果；若该设定值大于0，则过渡元素从该设定值开始完成剩余的过渡效果</li>
+                            <li>[注意]若该属性为0s则为默认值，若为0则为无效值。所以必须带单位</li>
+                            <li>[注意]该值为单值时，即所有过渡属性都对应同样时间；该值为多值时，过渡属性按照顺序对应持续时间</li>
+                        </ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="sx">
+				<a href="http://jzhuang.ltd/Andy/position.html">上一篇->CSS定位</a>
+				<a class="x" href="http://jzhuang.ltd/Andy/animation.html">下一篇->CSS动画</a>
+			</div>
+
+			<div class="footer">
+				<div class="f">
+					<p>本文章完了，有什么要说的吗？</p>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+  var oBtn=document.getElementById("btn");
+  var timer=null;
+  //申明一个变量看是否为系统还是用户滚动
+  var sBys=true;
+  window.onscroll=function(){
+    if(!sBys){
+      clearInterval(timer);
+    }
+    sBys=false;
+  }
+  oBtn.onclick=function(){
+    timer = setInterval(function(){
+      //获取scrollTop
+      var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+      //当点击按钮回到顶部时计算缓冲速度
+      var ispeed=Math.floor(-scrollTop/8);
+      if(scrollTop==0){
+        clearInterval(timer)
+      }
+      sBys=true;
+      document.documentElement.scrollTop=document.body.scrollTop=scrollTop+ispeed;
+    },30)
+  }
+}
+	</script>
+</html>
