@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jzhuang CSS选择器</title>
+		<link rel="shortcut icon" href="../img/icon.jpg">
+		<style>
+			body{
+				background: #e2ddc7;
+			}
+			.box .con{
+				background: #fff;
+				width: 65%;
+				margin: 100px auto;
+			}
+			.box .con .header h2{
+				padding-top: 50px;
+				text-align: center;
+				
+			}
+			.box .con .header h2 a{
+				color: #104e8b;
+				text-decoration: none;
+			}
+			.box .con .header h2 a:hover{
+				text-decoration: underline;
+			}
+			.box .con .header i{
+				color:#ee1289;
+				display: inline-block;
+				width: 100px;
+				text-align: center;
+				font-weight: bold;
+				font-size: 18px;
+			}
+			.box .con .header ul li{
+				position: relative;
+				list-style: none;
+				height: 30px;
+				line-height: 30px;
+				width: 100px;
+				text-align: center;
+			}
+			.box .con .header ul li a{
+				text-decoration: none;
+				color: #494949;
+			}
+			.box .con .nav h2{
+				background: #2b6695;
+				width: 90%;
+				height: 38px;
+				line-height: 38px;
+				margin-left: 43px;
+				text-align: center;
+				color: #fff;
+				border-radius: 5px;
+				box-shadow: -5px rgba(43,102,149,0.8);
+			}
+			.box .con .boder h2{
+				text-align: center;
+				border-radius: 5px;
+				font-size:15px;
+				margin-left: 43px;
+				color: #fff;
+				width: 354px;
+				height: 32px;
+				line-height: 32px;
+				background: #2b6600;
+			}
+            .box .con .boder h4{
+                width: 100px;
+                text-align: center;
+            }
+			.box .con .boder ul li{
+				line-height: 18px;
+				list-style: none;
+				height: 40px;
+				font-size: 14px;
+				color: #494949;
+			}
+			.box .con .boder .code span{
+				margin-left: 50px;
+			}
+			.box .con .boder .jc{
+				margin-left: 43px;
+			}
+			.box .con .boder .jc p,.box .con .boder .jc pre{
+				height: 30px;
+				line-height: 30px;
+				margin: 0;
+				padding: 0;
+			}
+			.box .con .boder .jc p{
+				color: #494949;
+			}
+			.box .con .boder .jc pre{
+				color: skyblue;
+				margin-left: 20px;
+			}
+			.box .con .boder .code img{
+				margin-left: 43px;
+			}
+            .box .con .boder .code table{
+                border-collapse:collapse; 
+/*                border: 1px solid #000;*/
+                margin-left: 43px;
+            }
+			.box .con .boder .code ul li{
+				height: 25px;
+				line-height: 25px;
+			}
+            .box .con .boder .code table tr td{
+                border:1px solid #c1c1c1;  
+                min-width: 100px;
+            }
+			.box .con .nav .code img{
+				margin-top: 15px;
+				margin-left: 43px;
+			}
+			.box .footer{
+				width: 65%;
+				margin: 0 auto;
+				margin-top: 50px;
+				background: #fff;
+			}
+			.box .sx{
+				width: 65%;
+				margin: 0 auto;
+				margin-top:-30px;
+			}
+			.box .sx .x{
+				margin-left: 50px;
+			}
+			.box .footer .f{
+				margin-left: 43px;
+				padding: 30px 0;
+			}
+			.box .footer .f p{
+				color: #494949;
+			}
+			.box .footer .f .s{
+				color: skyblue;
+				margin-left: 20px;
+			}
+			.box .fixed{
+				position:fixed;bottom:10px;right:10px;
+			}
+			.box .fixed div{
+				cursor: pointer;
+			}
+			.box .fixed img{
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				transition: All 0.4s ease-in-out;
+				-webkit-transition: All 0.4s ease-in-out;
+           		-moz-transition: All 0.4s ease-in-out;
+            	-o-transition: All 0.4s ease-in-out;
+			}
+		.box .fixed img:hover{
+			 transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+		}
+            #code pre{
+                font-size: 16px;
+            }
+            #code pre pre{
+                margin: 0;
+            }
+            #code{
+                margin: 0;
+            }
+            #code div{
+                width: 90%;
+                margin: 0 auto;
+                background:#f5f5f5;
+            }
+            td{
+                height: 30px;
+                line-height: 30px;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="fixed">
+				<div class="img"><img src="http://jzhuang.ltd/img/top.png" id="btn"></div>
+			</div>
+			<div class="con">
+
+				<div class="header">
+					<h2><a href="javascript:;">CSS定位</a></h2>
+					<i>知识预览</i>
+					<ul>
+						<li><a href="javascript:;">CSS定位</a></li>
+					</ul>
+				</div>
+
+				<div class="nav">
+					<h2>CSS定位</h2>					
+					<h2>Z-index讲解</h2>
+				</div>
+
+				<div class="boder">
+					<h2>理解定位（static是默认的）</h2>
+					<div class="code">
+						<ul>
+							<img src="../img/a-1.jpg" alt="">
+						</ul>
+						<h4 style="width: 200px;">原始图—不加定位</h4>
+						<ul>
+						    <img src="../img/a-2.png" alt="">
+						</ul>
+						<h4 style="width: 200px;">absolute(绝对定位)</h4>
+						<ul>
+						    <li>1.脱离标准流，在页面中不占位置（浮起来）</li>
+						    <li style="height: 55px;">2.如果没有父元素，则相对于body定位；如果有父元素，但父元素没有定位，那么还是相对于body定位；如果父元素有定位，那么相对于父元素来定位</li>
+						    <img src="../img/a-3.jpg" alt="">
+						</ul>
+						<h4>代码如下</h4>
+						<img src="../img/a-4.png" alt="">
+						<h4 style="width: 200px;">2.relative(相对定位)</h4>
+						<ul>
+						    <li>1.不脱离标准流，在页面中占位置</li>
+                            <li>2.相对于自己原来的位置来进行定位 </li>
+                            <img src="../img/a-6.png" alt="">
+						</ul>
+						<h4>代码如下</h4>
+						<img src="../img/a-7.png" alt="">
+						<h4 style="width: 200px;">3.fixed(固定定位)</h4>
+						<ul>
+						    <li>1.脱离标准流，在页面中不占位置</li>
+                            <li>2.不管页面有多大，永远相对于浏览器的边框来定位</li>
+                            <img src="../img/a-8.png" alt="">
+						</ul>
+						<h4>代码如下</h4>
+						<img src="../img/a-9.png" alt="">
+					</div>
+				</div>
+				<div class="boder">
+                    <h2>二、z-index解析</h2>
+				    <div class="code">
+				        <ul>
+				            <img src="../img/a-11.gif" alt="">
+				            <li>设置元素堆叠顺序</li>
+				            <li>基本支持所以主流浏览器 </li>
+				            <li>该元素可拥有负的属性值</li>
+				            <li>Z-index只能在定位元素上奏效（position:absolute）</li>
+				            <li>Z-index的值是设置一个定位元素沿Z轴的位置，其值越大，离用户越进，所以若两个定位元素，Z-index值越大的将会覆盖值越小的定位元素</li>
+				        </ul>
+				        <h4 style="height: 30px; line-height: 30px;margin: 0; padding:0;">代码解析</h4>
+				        <h5 style="width: 140px;height: 30px; line-height: 30px; text-align: center;margin: 0; padding:0;">首先没有Z-index</h5>
+				        <img src="../img/a-12.jpg" alt="">
+				        <ul>
+				            <li>效果是：蓝色定位元素在黑色定位元素上面</li>
+				        </ul>
+				        <h4 style="width: 380px;height: 30px; line-height: 30px; text-align: center;margin: 0; padding:0;">加Z-index，使得黑色定位元素在蓝色上面</h4>
+				        <img src="../img/a-14.png" alt="">
+				    </div>
+				</div>
+
+			</div>
+
+			<div class="sx">
+				<a href="http://jzhuang.ltd/Andy/float.html">上一篇->CSS浮动</a>
+				<a class="x" href="http://jzhuang.ltd/Andy/transition.html">下一篇->CSS过渡</a>
+			</div>
+
+			<div class="footer">
+				<div class="f">
+					<p>本文章完了，有什么要说的吗？</p>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+  var oBtn=document.getElementById("btn");
+  var timer=null;
+  //申明一个变量看是否为系统还是用户滚动
+  var sBys=true;
+  window.onscroll=function(){
+    if(!sBys){
+      clearInterval(timer);
+    }
+    sBys=false;
+  }
+  oBtn.onclick=function(){
+    timer = setInterval(function(){
+      //获取scrollTop
+      var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+      //当点击按钮回到顶部时计算缓冲速度
+      var ispeed=Math.floor(-scrollTop/8);
+      if(scrollTop==0){
+        clearInterval(timer)
+      }
+      sBys=true;
+      document.documentElement.scrollTop=document.body.scrollTop=scrollTop+ispeed;
+    },30)
+  }
+}
+	</script>
+</html>
